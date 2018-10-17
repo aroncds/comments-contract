@@ -9,7 +9,7 @@ contract HeartToken is StandardToken {
     uint public decimals = 8;
     uint public INITIAL_SUPPLY = 21000000 * (10 ** decimals);
 
-    function HeartToken() public {
+    constructor() public {
         totalSupply_ = INITIAL_SUPPLY;
         balances[msg.sender] = totalSupply_;
     }
